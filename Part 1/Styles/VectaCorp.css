@@ -1,0 +1,76 @@
+
+/* As usual, starting with the body */
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #EDEDED;
+}
+
+h1,h2
+{
+    color:red;
+    border-bottom: 1px solid #929CA4;
+}
+
+/* To select first-letter of the first <p> element */
+
+p:first-of-type::first-letter
+{
+    font-size: 30px;
+}
+
+/* Solutions class */
+.solution
+{
+    color: #CC1C0D;
+    font-weight:bold;
+}
+
+/* Testimonials */
+#testimonial1 , #testimonial2
+{
+    font-style: italic;
+    margin-left:50px;
+}
+
+a[href^='http']:link
+{
+    color:red;
+    text-decoration:none;
+}
+
+a[href^='http']:active
+{
+    color:blue;
+    text-decoration:none;
+}
+
+a[href^='http']:visited
+{
+    color:green;
+    text-decoration:none;
+}
+
+a[href^='http']:hover
+{
+    color:orange;
+    text-decoration:none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li:first-of-type
+{
+    color: blue;
+}
+
+li:last-of-type
+{
+    color: red;
+}
